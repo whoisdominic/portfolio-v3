@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.container {
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-top: 10vh;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projCont {
+  display: flex;
+  width: 50vw;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 15px;
+}
+.projImg {
+  max-height: 75vh;
+}
+.projTitle {
+  border-radius: 15px;
+  width: 10vw;
+  text-align: center;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projItem {
+  font-size: 2rem;
+  list-style: none;
+  text-align: center;
+}
+.projDesc {
+  font-size: 1.5rem;
+  margin-left: 5vw;
+}
+.infoTitle {
+  text-align: center;
+  font-size: 3rem;
+}
+.projInfoCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+}
+.gitHubCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -1.5rem;
+}
+.githubTxt {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+/* Colors */
+.colorHabit:hover {
+  background: linear-gradient(to bottom, #197a62 5%, #156954 100%);
+  box-shadow: inset 0px 1px 0px 0px #135a48;
+}
+.colorHabit:active {
+  position: relative;
+  top: 1px;
+}
+.colorHabit {
+  background-color: #24ab89;
+  box-shadow: inset 0px 1px 0px 0px #209e7f;
+  background: linear-gradient(to bottom, #24ab89 5%, #197c63 100%);
+  border-radius: 6px;
+  border: 1px solid #0c3a2f;
+  display: flex;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #05815c;
+  font-family: "Lato", sans-serif;
+}
+.colorGoat {
+  background-color: #7e5bcf;
+  box-shadow: inset 0px 1px 0px 0px #a954da;
+  background: linear-gradient(to bottom, #7e5bcf 5%, #5834ac 100%);
+  border-radius: 6px;
+  border: 1px solid #1e0c3a;
+  display: flex;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #540581;
+  font-family: "Lato", sans-serif;
+}
+.colorGoat:hover {
+  background: linear-gradient(to bottom, #845fda 5%, #744ece 100%);
+  box-shadow: inset 0px 1px 0px 0px #7e56da;
+}
+.colorGoat:active {
+  position: relative;
+  top: 1px;
+}
+/* Mobile */
+@media (max-width: 600px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 3rem;
+  }
+  .container {
+    font-family: "Lato", sans-serif;
+    min-height: 90vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
