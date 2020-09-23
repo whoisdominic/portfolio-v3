@@ -88,6 +88,7 @@ export default function About(props) {
                 <li>CSS</li>
                 <li>Sass</li>
                 <li>Kotlin</li>
+                <li>Swift</li>
               </ul>
             </div>
             <div className={styles.aboutSkill}>
