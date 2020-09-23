@@ -77,7 +77,9 @@
   margin-top: -1.5rem;
   width: 30vw;
 }
-
+.techUl {
+  text-align: center;
+}
 .githubTxt {
   font-size: 1.5rem;
   margin-right: 2rem;
