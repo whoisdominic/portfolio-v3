@@ -1,65 +1,69 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React, { useState } from "react";
+import Typist from "react-typist";
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailIcon from "@material-ui/icons/Email";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import PhoneIcon from "@material-ui/icons/Phone";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 export default function Home() {
+  const mobile = useMediaQuery("(min-width:600px)");
+  const [introDone, setIntroDone] = useState(false);
+  const pageTransition = () => {
+    setIntroDone(true);
+  };
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Dominic Cobb</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <Typist className={styles.typing} onTypingDone={pageTransition}>
+          My name is Dominic.
+          <Typist.Delay ms={750} />
+          <Typist.Backspace count={19} delay={750} />
+          I'm a Software Engineer.
+          <Typist.Delay ms={2000} />
+          <Typist.Backspace count={25} delay={750} />
+          What would you like to see?
+        </Typist>
+        {introDone ? (
+          <>
+            <div className={styles.miniFlex}>
+              <ul>
+                <li>Resume</li>
+                <li>Portfolio</li>
+                <li>Contact</li>
+                <li>Everything</li>
+              </ul>
+            </div>
+          </>
+        ) : (
+          <> </>
+        )}
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+        <a href="tel:2064896538">
+          {mobile ? <PhoneIcon fontSize="large" /> : <PhoneIcon />}
+        </a>
+        <span />
+        <a href="mailto: me@dominiccobb.dev">
+          {mobile ? <EmailIcon fontSize="large" /> : <EmailIcon />}
+        </a>
+        <span />
+        <a href="http://www.github.com/whoisdominic" target="_blank">
+          {mobile ? <GitHubIcon fontSize="large" /> : <GitHubIcon />}
+        </a>
+        <span />
+        <a href="https://www.linkedin.com/in/dominiccobb/" target="_blank">
+          {mobile ? <LinkedInIcon fontSize="large" /> : <LinkedInIcon />}
         </a>
       </footer>
     </div>
-  )
+  );
 }
