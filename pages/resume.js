@@ -11,7 +11,6 @@ export default function Resume(props) {
     <>
       <div className={styles.container}>
         <Nav />
-
         <Head>
           <title>Dominic Cobb</title>
           <link rel="icon" href="/favicon.ico" />

@@ -43,7 +43,7 @@ export default function Home() {
           <Typist.Delay ms={750} />
           <Typist.Backspace count={19} delay={750} />
           I'm a Software Engineer.
-          <Typist.Delay ms={1500} />
+          <Typist.Delay ms={1250} />
           <Typist.Backspace count={25} delay={750} />
           What would you like to see?
           <Typist.Delay ms={1000} />

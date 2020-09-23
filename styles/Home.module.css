@@ -11,7 +11,6 @@
 }
 
 .main {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -53,12 +52,12 @@
 
 .grid {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
-  max-width: 800px;
   margin-top: 3rem;
+  max-width: 90vw;
 }
 
 .typing {
@@ -83,6 +82,72 @@
   font-size: 2.1rem;
 }
 
+.pageTitle {
+  font-size: 2.5rem;
+  margin-bottom: -2.5vh;
+}
+/* about */
+.myPhoto {
+  border-radius: 15px;
+  max-width: 45%;
+  max-height: 40vh;
+  height: auto;
+}
+
+.aboutCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.aboutInfo {
+  max-width: 45vw;
+  font-size: 1.45rem;
+  padding-left: 10%;
+  margin-top: -1%;
+}
+.skillCont {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 2.5% 0;
+}
+.aboutSkill {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+}
+.left {
+  border-left: 3px dotted rgb(53, 53, 53);
+}
+.right {
+  border-right: 3px dotted rgb(53, 53, 53);
+}
+.aboutSkill li {
+  list-style: none;
+  font-size: 1.75rem;
+}
+.skillTitle {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+.aboutImg {
+  max-width: 10vw;
+  margin: 3.5% 15px;
+}
+.aboutIcons {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Animation */
 .scaleInCenter {
   -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
@@ -113,7 +178,7 @@
     opacity: 1;
   }
 }
-
+/* Hovers */
 .hoverAbout:hover {
   cursor: pointer;
   text-decoration: line-through;
@@ -140,6 +205,7 @@
   text-decoration-color: #ee5a20;
 }
 
+/* Mobile */
 @media (max-width: 600px) {
   .footer {
     visibility: hidden;
@@ -154,6 +220,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .typing {
     font-family: "Lato", sans-serif;
@@ -171,6 +238,68 @@
   .miniFlex li {
     margin: 1vh 0;
   }
-  .hambCont {
+  .headerLinks {
+    margin-left: 7%;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 3rem;
+  }
+  .myPhoto {
+    border-radius: 15px;
+    max-width: 80%;
+    height: auto;
+    max-height: 35vh;
+  }
+  .aboutCont {
+    justify-content: center;
+    text-align: center;
+  }
+  .aboutInfo {
+    margin-left: 0;
+    padding: 0;
+    max-width: 90vw;
+    margin-top: 0;
+  }
+  .aboutIcons {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .aboutImg {
+    max-width: 30vw;
+    margin: 3.5% 15px;
+  }
+  .left {
+    border-left: none;
+  }
+  .right {
+    border-right: none;
+  }
+  .skillCont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .aboutSkill {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .skillTitle {
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
   }
 }
