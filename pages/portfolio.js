@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "../styles/Port.module.css";
 import Nav from "./components/nav.js";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import PublicIcon from "@material-ui/icons/Public";
 
 // Data
 const projects = [
@@ -30,7 +31,7 @@ const projects = [
     description:
       "Allows users to listen to music and vote for who is the greatest of all time in different genre categories with React. Designed mobile-first user experience with Material UI to allow the user to select between countless categories that dynamically integrate Artists in each category through the Spotify API",
     images: ["./img/goatrotato.png"],
-    link: "",
+    link: "https://goatranker.com",
     gitHub: "https://github.com/whoisdominic/goat-ranker-web",
     techused: ["React", "Materialize", "Scss", "Express", "MongoDB", "Netlify"],
     color: "color-goat",
@@ -72,15 +73,35 @@ export default function Portfolio(props) {
             <img className={styles.projImg} src={projects[current].images[0]} />
             <div className={styles.projInfoCont}>
               <div className={styles.gitHubCont}>
-                <h3 className={styles.githubTxt}>Checkout the code!</h3>
                 <a href={`${projects[current].gitHub}`} target="_blank">
+                  <h3 className={styles.githubTxt}>Code</h3>
+                </a>
+                <a
+                  className={styles.portLinks}
+                  href={`${projects[current].gitHub}`}
+                  target="_blank"
+                >
                   <GitHubIcon fontSize="large" />
                 </a>
+                <a href={`${projects[current].link}`} target="_blank">
+                  <h3 className={styles.githubTxt}>Website</h3>
+                </a>
+                <a
+                  className={styles.portLinks}
+                  href={`${projects[current].link}`}
+                  target="_blank"
+                >
+                  <PublicIcon fontSize="large" />
+                </a>
               </div>
-              <p className={styles.projDesc}>{projects[current].description}</p>
-              <div>
+              <div className={styles.mobileDescr}>
+                <p className={styles.projDesc}>
+                  {projects[current].description}
+                </p>
+              </div>
+              <div className={styles.techCont}>
                 <h2 className={styles.infoTitle}>- Tech Used -</h2>
-                <ul>
+                <ul className={styles.techUl}>
                   {projects[current].techused.map((item) => {
                     return <li className={styles.projItem}>{item}</li>;
                   })}

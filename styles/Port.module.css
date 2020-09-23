@@ -49,6 +49,7 @@
 .projDesc {
   font-size: 1.5rem;
   margin-left: 5vw;
+  text-align: center;
 }
 .infoTitle {
   text-align: center;
@@ -61,17 +62,29 @@
   flex-wrap: wrap;
   align-items: center;
   width: 70vw;
+  margin: 0 auto;
+}
+.portLinks {
+  margin: 0 5%;
+  border-right: 3px double rgb(53, 53, 53);
+  padding-right: 5%;
 }
 .gitHubCont {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: -1.5rem;
+  width: 30vw;
 }
+
 .githubTxt {
   font-size: 1.5rem;
   margin-right: 2rem;
+}
+.githubTxt:hover {
+  text-decoration: line-through;
+  text-decoration-color: crimson;
 }
 /* Colors */
 .colorHabit:hover {
@@ -92,9 +105,9 @@
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 1.25rem;
   padding: 6px 24px;
+  width: 15vw;
   text-decoration: none;
   text-shadow: 0px 1px 0px #05815c;
   font-family: "Lato", sans-serif;
@@ -109,9 +122,9 @@
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 1.25rem;
   padding: 6px 24px;
+  width: 15vw;
   text-decoration: none;
   text-shadow: 0px 1px 0px #540581;
   font-family: "Lato", sans-serif;
@@ -126,22 +139,80 @@
 }
 /* Mobile */
 @media (max-width: 600px) {
-  .grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin-top: 3rem;
-  }
   .container {
     font-family: "Lato", sans-serif;
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 0 0.5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 10vh;
+  }
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .projCont {
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 5% auto;
+  }
+  .projInfoCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    width: 70vw;
+    margin: 12.5% auto;
+  }
+  .colorHabit {
+    width: 35vw;
+    margin: 5% 5% -7.5% 5%;
+    padding: 26px 34px;
+  }
+  .colorGoat {
+    width: 35vw;
+    margin: 5% 5% -7.5% 5%;
+    padding: 26px 34px;
+  }
+  .portLinks {
+    border-right: none;
+  }
+  .gitHubCont {
+    display: flex;
+    text-align: center;
+  }
+  .techCont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0%;
+  }
+  .projDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0%;
+  }
+  .mobileDescr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .techUl {
+    text-align: center;
+    margin-left: -1rem;
   }
 }
