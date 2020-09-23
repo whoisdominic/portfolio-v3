@@ -20,10 +20,15 @@
 }
 .projCont {
   display: flex;
-  width: 50vw;
-  justify-content: space-evenly;
+  width: 80vw;
+  justify-content: center;
   align-items: center;
   border-radius: 15px;
+}
+.projButtons {
+  display: flex;
+  width: 50vw;
+  justify-content: space-evenly;
 }
 .projImg {
   max-height: 75vh;
@@ -40,7 +45,6 @@
 .projItem {
   font-size: 2rem;
   list-style: none;
-  text-align: center;
 }
 .projDesc {
   font-size: 1.5rem;
@@ -48,14 +52,15 @@
 }
 .infoTitle {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .projInfoCont {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  width: 60vw;
+  width: 70vw;
 }
 .gitHubCont {
   display: flex;

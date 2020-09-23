@@ -15,7 +15,14 @@ const projects = [
     images: ["./img/habit.png"],
     link: "",
     gitHub: "https://github.com/whoisdominic/habitHunter",
-    techused: ["React-Native", "Express", "Twilio"],
+    techused: [
+      "React-Native",
+      "Expo",
+      "Express",
+      "Twilio",
+      "Formik",
+      "Reanimated",
+    ],
     color: "color-habit",
   },
   {
@@ -47,7 +54,7 @@ export default function Portfolio(props) {
         </Head>
 
         <main className={styles.main}>
-          <div className={styles.projCont}>
+          <div className={styles.projButtons}>
             <h1
               className={`${styles.colorHabit} ${styles.projTitle}`}
               onClick={() => handleProjectChange(0)}
@@ -64,7 +71,6 @@ export default function Portfolio(props) {
           <div className={styles.projCont}>
             <img className={styles.projImg} src={projects[current].images[0]} />
             <div className={styles.projInfoCont}>
-              <h2 className={styles.infoTitle}>Description</h2>
               <div className={styles.gitHubCont}>
                 <h3 className={styles.githubTxt}>Checkout the code!</h3>
                 <a href={`${projects[current].gitHub}`} target="_blank">
@@ -72,12 +78,14 @@ export default function Portfolio(props) {
                 </a>
               </div>
               <p className={styles.projDesc}>{projects[current].description}</p>
-              <h2 className={styles.infoTitle}>Tech Used</h2>
-              <ul>
-                {projects[current].techused.map((item) => {
-                  return <li className={styles.projItem}>{item}</li>;
-                })}
-              </ul>
+              <div>
+                <h2 className={styles.infoTitle}>- Tech Used -</h2>
+                <ul>
+                  {projects[current].techused.map((item) => {
+                    return <li className={styles.projItem}>{item}</li>;
+                  })}
+                </ul>
+              </div>
             </div>
           </div>
         </main>
