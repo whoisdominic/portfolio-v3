@@ -17,7 +17,7 @@ export default function About(props) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <h1 className={styles.pageTitle}>Dominic Cobb</h1>
-        <main className={styles.grid}>
+        <main className={styles.main}>
           <div className={styles.aboutCont}>
             <img
               src="./img/photoOfMe.jpeg"

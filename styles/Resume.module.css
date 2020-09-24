@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.container {
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-top: 10vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  max-width: 45vw;
+  max-height: 50vh;
+  border-radius: 15px;
+}
+.resumeCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.resumeInfo {
+  width: 45vw;
+  padding: 5%;
+  font-size: 1.2rem;
+}
+.delink {
+  margin-top: 2.5%;
+  margin-bottom: -2.5%;
+}
+.under {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    font-family: "Lato", sans-serif;
+    padding: 0 0.5rem;
+    display: flex;
+    font-size: 10px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 5%;
+  }
+  .delink {
+    margin-top: 7.5%;
+    margin-bottom: -5%;
+  }
+  .aboutCont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img {
+    margin-top: 12.5%;
+    max-width: 90vw;
+    border-radius: 15px;
+  }
+  .resumeInfo {
+    width: 90vw;
+  }
+}

@@ -80,13 +80,6 @@ export default function Home() {
                     Portfolio
                   </li>
                 </Link>
-                <Link href="/contact">
-                  <li
-                    className={`${styles.scaleInCenter} ${styles.hoverContact}`}
-                  >
-                    Contact
-                  </li>
-                </Link>
                 <Link href="/everything">
                   <li
                     className={`${styles.scaleInCenter} ${styles.hoverEverything}`}

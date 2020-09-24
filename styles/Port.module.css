@@ -215,6 +215,11 @@
   }
   .techUl {
     text-align: center;
-    margin-left: -1rem;
+    margin-left: -5%;
+  }
+  .projDesc {
+    font-size: 1.5rem;
+    margin-left: -5%;
+    text-align: center;
   }
 }

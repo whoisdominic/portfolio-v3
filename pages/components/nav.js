@@ -81,15 +81,6 @@ export default function Footer() {
             <ListItemText primary={"Resume"} />
           </ListItem>
         </Link>
-
-        <Link href="/contact">
-          <ListItem button>
-            <ListItemIcon>
-              <TelegramIcon />
-            </ListItemIcon>
-            <ListItemText primary={"Contact"} />
-          </ListItem>
-        </Link>
       </List>
       <Divider />
     </div>
