@@ -67,6 +67,7 @@ export default function About(props) {
                 <li>React-Native</li>
                 <li>Nodejs</li>
                 <li>Express</li>
+                <li>Django</li>
                 <li>NextJs</li>
                 <li>Expo</li>
                 <li>jQuery</li>
