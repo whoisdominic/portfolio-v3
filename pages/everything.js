@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Typist from "react-typist";
 import Head from "next/head";
-import Link from "next/link";
-import styles from "../styles/Home.module.css";
-import Footer from "./components/footer.js";
+import styles from "../styles/Everything.module.css";
 import Nav from "./components/nav.js";
+import About from "./about.js";
+import Portfolio from "./portfolio";
+import Resume from "./resume";
 
 export default function Everything(props) {
   return (
@@ -17,7 +17,9 @@ export default function Everything(props) {
         </Head>
 
         <main className={styles.main}>
-          <h1>This is the Everything Page</h1>
+          <About />
+          <Portfolio />
+          <Resume />
         </main>
       </div>
     </>

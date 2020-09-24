@@ -254,6 +254,11 @@
     max-width: 80%;
     height: auto;
     max-height: 35vh;
+    margin-top: 7.5%;
+  }
+  .pageTitle {
+    margin-top: 5vh;
+    margin-bottom: 1vh;
   }
   .aboutCont {
     justify-content: center;
