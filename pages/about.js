@@ -26,7 +26,7 @@ export default function About(props) {
             />
             <div className={styles.aboutInfo}>
               <p>
-                I am Software engineer with a proven ability to adapt and
+                I am a Software engineer with a proven ability to adapt and
                 collaborate in rapidly changing work environments and team
                 compositions. I am a graduate of General Assembly's Software
                 Engineering Immersive. Wherein I learned Javascript, React,
@@ -34,11 +34,12 @@ export default function About(props) {
               </p>
               <hr />
               <p>
-                Born and raised in Bellevue Washington, a stones throw away from
-                a little company called Microsoft. I've always been facinated
-                with technology and how it can change the world! Whether you
-                need a beatiful website, a powerfull Api, or a mobile app made
-                for your business. I am more than up to the task!
+                Born and raised in Bellevue Washington, a stone's throw away
+                from a little company called Microsoft. I've always been
+                fascinated with technology and how it can change the world!
+                Whether you need a beautiful website, a powerful API, or a
+                mobile app made for your business. I am more than up to the
+                task!
               </p>
 
               {mobile ? (
@@ -77,7 +78,7 @@ export default function About(props) {
               </ul>
               <hr />
             </div>
-
+            <hr />
             <div className={styles.aboutSkill}>
               <h2 className={styles.skillTitle}>Languages</h2>
               <br />
@@ -92,6 +93,8 @@ export default function About(props) {
                 <li>Swift</li>
               </ul>
             </div>
+            <hr />
+
             <div className={styles.aboutSkill}>
               <h2 className={styles.skillTitle}>Database/API</h2>
               <br />
@@ -103,6 +106,8 @@ export default function About(props) {
                 <li>DynamoDB</li>
               </ul>
             </div>
+            <hr />
+
             <div className={`${styles.aboutSkill} ${styles.right}`}>
               <h2 className={styles.skillTitle}>Misc</h2>
               <br />
@@ -118,6 +123,7 @@ export default function About(props) {
                 <li>Wordpress</li>
               </ul>
             </div>
+            <hr />
           </div>
         </main>
       </div>
