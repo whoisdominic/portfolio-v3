@@ -64,17 +64,17 @@ export default function About(props) {
               <h2 className={styles.skillTitle}>Frameworks + Libraries</h2>
               <br />
               <ul>
-                <li>React</li>
-                <li>React-Native</li>
-                <li>Nodejs</li>
-                <li>Express</li>
-                <li>Django</li>
-                <li>NextJs</li>
-                <li>Expo</li>
-                <li>jQuery</li>
-                <li>Redux</li>
-                <li>Material</li>
-                <li>Reanimated</li>
+                <h4 className={styles.skills}>React</h4>
+                <h4 className={styles.skills}>React-Native</h4>
+                <h4 className={styles.skills}>Nodejs</h4>
+                <h4 className={styles.skills}>Express</h4>
+                <h4 className={styles.skills}>Django</h4>
+                <h4 className={styles.skills}>NextJs</h4>
+                <h4 className={styles.skills}>Expo</h4>
+                <h4 className={styles.skills}>jQuery</h4>
+                <h4 className={styles.skills}>Redux</h4>
+                <h4 className={styles.skills}>Material</h4>
+                <h4 className={styles.skills}>Reanimated</h4>
               </ul>
               <hr />
             </div>
@@ -83,14 +83,14 @@ export default function About(props) {
               <h2 className={styles.skillTitle}>Languages</h2>
               <br />
               <ul>
-                <li>HTML</li>
-                <li>Javascript</li>
-                <li>Typescript</li>
-                <li>Python</li>
-                <li>CSS</li>
-                <li>Sass</li>
-                <li>Kotlin</li>
-                <li>Swift</li>
+                <h4 className={styles.skills}>HTML</h4>
+                <h4 className={styles.skills}>Javascript</h4>
+                <h4 className={styles.skills}>Typescript</h4>
+                <h4 className={styles.skills}>Python</h4>
+                <h4 className={styles.skills}>CSS</h4>
+                <h4 className={styles.skills}>Sass</h4>
+                <h4 className={styles.skills}>Kotlin</h4>
+                <h4 className={styles.skills}>Swift</h4>
               </ul>
             </div>
             <hr />
@@ -98,33 +98,39 @@ export default function About(props) {
             <div className={styles.aboutSkill}>
               <h2 className={styles.skillTitle}>Database/API</h2>
               <br />
-              <ul>
-                <li>MongoDb</li>
-                <li>Postgresql</li>
-                <li>GraphQL</li>
-                <li>Firebase</li>
-                <li>DynamoDB</li>
-              </ul>
+              <h4 className={styles.skills}>MongoDb</h4>
+              <h4 className={styles.skills}>Postgresql</h4>
+              <h4 className={styles.skills}>GraphQL</h4>
+              <h4 className={styles.skills}>Firebase</h4>
+              <h4 className={styles.skills}>DynamoDB</h4>
             </div>
             <hr />
 
             <div className={`${styles.aboutSkill} ${styles.right}`}>
               <h2 className={styles.skillTitle}>Misc</h2>
               <br />
-              <ul>
-                <li>GIT</li>
-                <li>Heroku</li>
-                <li>AWS</li>
-                <li>Digital Ocean</li>
-                <li>Linux</li>
-                <li>REST-API</li>
-                <li>Babel</li>
-                <li>X-code</li>
-                <li>Wordpress</li>
-              </ul>
+              <h4 className={styles.skills}>GIT</h4>
+              <h4 className={styles.skills}>Heroku</h4>
+              <h4 className={styles.skills}>AWS</h4>
+              <h4 className={styles.skills}>Digital Ocean</h4>
+              <h4 className={styles.skills}>Linux</h4>
+              <h4 className={styles.skills}>REST-API</h4>
+              <h4 className={styles.skills}>Babel</h4>
+              <h4 className={styles.skills}>X-code</h4>
+              <h4 className={styles.skills}>Wordpress</h4>
             </div>
             <hr />
           </div>
+          {/* <div className={styles.certCont}>
+            <h2 className={styles.skillTitle}>Certifications</h2>
+            <div className={styles.certItem}>
+              <img className={styles.certImage} src="./img/GAlogo.png" />
+              <div className={styles.certDescription}>
+                <p className={styles.certTxt}>Software Engineering Immersive</p>
+                <p className={styles.certTxt}>500+ Hours Bootcamp Structure</p>
+              </div>
+            </div>
+          </div> */}
         </main>
       </div>
     </>

@@ -116,7 +116,7 @@
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 2.5% 0;
+  margin: 3.5% 0;
 }
 .aboutSkill {
   width: 20vw;
@@ -131,14 +131,16 @@
 .right {
   border-right: 3px dotted rgb(53, 53, 53);
 }
-.aboutSkill li {
-  list-style: none;
+.skills {
   font-size: 1.75rem;
+  margin: 1%;
 }
 .skillTitle {
   font-size: 2rem;
   font-family: "Lato", sans-serif;
   text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid currentColor;
 }
 .aboutImg {
   max-width: 10vw;
@@ -150,6 +152,30 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Certification */
+
+.certCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10% 0;
+}
+.certImage {
+  margin-top: 5vh;
+  max-width: 30vw;
+}
+.certItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+}
+.certTxt {
+  font-size: 2.75rem;
 }
 
 /* Animation */
@@ -234,9 +260,6 @@
     align-items: center;
     list-style: none;
   }
-  .miniFlex li {
-    margin: 1vh 0;
-  }
   .headerLinks {
     margin-left: 7%;
   }
@@ -294,8 +317,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 95%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin: 7.5vh 0;
   }
   .aboutSkill {
     width: 90vw;
@@ -304,15 +326,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2.5vh auto;
+    margin: 4vh auto;
+    text-align: center;
   }
 
   .skillTitle {
     font-size: 2rem;
     font-family: "Lato", sans-serif;
   }
-  .aboutSkill li {
-    list-style: none;
+  .certImage {
+    margin-top: 5vh;
+    max-width: 65vw;
+  }
+  .certItem {
+    flex-wrap: wrap;
+  }
+  .certTxt {
     font-size: 2rem;
+    text-align: center;
+  }
+  .certCont {
+    margin: -5%;
   }
 }
